@@ -1,0 +1,40 @@
+{
+    "name": "elysiumrealms/database-router",
+    "version": "0.1.1",
+    "description": "A Database Router isolate Read Write Connections",
+    "type": "library",
+    "require": {
+        "php": "*",
+        "laravel/framework": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elysiumrealms\\DatabaseRouter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elysiumrealms\\DatabaseRouter\\DatabaseRouterServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "deflinhec",
+            "email": "deflinhec@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": "@prepare"
+    }
+}
