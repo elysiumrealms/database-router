@@ -55,6 +55,7 @@ class DatabaseRouterServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Console\InstallCommand::class,
+                Console\dbinit::class,
             ]);
         }
     }
